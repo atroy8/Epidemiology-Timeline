@@ -1,2 +1,2 @@
 # Epidemiology-Timeline
-Timeline of importance moments of epidemiology. 
+Timeline of important moments of epidemiology. 
