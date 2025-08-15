@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline of Epidemiology: A Journey Through Public Health History</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Timeline of Epidemiology</h1>
+            <p class="header__subtitle">A Journey Through Public Health History</p>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <div class="container">
+            <div class="nav-controls">
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="form-control search-input" placeholder="Search events, people, or topics...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="filter-container">
+                    <select id="periodFilter" class="form-control filter-select">
+                        <option value="all">All Time Periods</option>
+                        <option value="ancient">Ancient (Pre-1500)</option>
+                        <option value="early-modern">Early Modern (1500-1800)</option>
+                        <option value="19th-century">19th Century (1800-1900)</option>
+                        <option value="modern">Modern Era (1900+)</option>
+                    </select>
+                    <select id="categoryFilter" class="form-control filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="Ancient Medicine">Ancient Medicine</option>
+                        <option value="Disease Theory">Disease Theory</option>
+                        <option value="Vaccination">Vaccination</option>
+                        <option value="Clinical Research">Clinical Research</option>
+                        <option value="Infection Control">Infection Control</option>
+                        <option value="Public Health Policy">Public Health Policy</option>
+                        <option value="Medical Ethics">Medical Ethics</option>
+                        <option value="Pandemic">Pandemic</option>
+                    </select>
+                </div>
+                <button id="clearFilters" class="btn btn--secondary">Clear Filters</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="timeline-wrapper">
+                <div class="timeline-axis"></div>
+                <div id="timeline" class="timeline">
+                    <!-- Timeline events will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="timeline-navigation">
+        <button class="timeline-nav-btn" data-period="ancient">
+            <i class="fas fa-temple"></i>
+            <span>Ancient</span>
+        </button>
+        <button class="timeline-nav-btn" data-period="early-modern">
+            <i class="fas fa-microscope"></i>
+            <span>Early Modern</span>
+        </button>
+        <button class="timeline-nav-btn" data-period="19th-century">
+            <i class="fas fa-stethoscope"></i>
+            <span>19th Century</span>
+        </button>
+        <button class="timeline-nav-btn" data-period="modern">
+            <i class="fas fa-dna"></i>
+            <span>Modern Era</span>
+        </button>
+    </div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <div id="videoModal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Educational Video</h3>
+                <button class="modal-close" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="videoContainer" class="video-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Timeline of Epidemiology. Educational content for learning purposes.</p>
+            <div class="footer-links">
+                <a href="https://en.wikipedia.org/wiki/Epidemiology" target="_blank">Learn More About Epidemiology</a>
+                <a href="https://www.cdc.gov" target="_blank">CDC - Disease Control</a>
+                <a href="https://www.who.int" target="_blank">World Health Organization</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
